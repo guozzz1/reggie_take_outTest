@@ -3,8 +3,9 @@ package com.reggie.controller;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.reggie.common.R;
 import com.reggie.entity.User;
-import com.reggie.service.UserService;
 import com.reggie.utils.ValidateCodeUtils;
+import com.reggie.service.UserService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/user")
 @Slf4j
+@Api(tags = "用户管理接口")
 public class UserController {
 
     @Autowired

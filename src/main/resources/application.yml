@@ -20,3 +20,18 @@ mybatis-plus:
       id-type: ASSIGN_ID
 reggie:
   path: D:\img\
+knife4j:
+  enable: true
+  openapi:
+    title: 瑞吉外卖接口文档
+    description: "瑞吉外卖接口文档"
+    email: guozzz@itcast.cn
+    concat: 果汁
+    url: https://www.itcast.cn
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.reggie.controller

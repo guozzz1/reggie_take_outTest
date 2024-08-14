@@ -4,6 +4,7 @@ import com.reggie.common.R;
 import com.reggie.dto.SetmealDto;
 import com.reggie.service.SetmealDishService;
 import com.reggie.service.SetmealService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/setmeal")
 @Slf4j
+@Api(tags = "套餐管理接口")
 public class SetmealController {
     @Autowired
     private SetmealService setmealService;

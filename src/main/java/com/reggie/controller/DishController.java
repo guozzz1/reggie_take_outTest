@@ -6,8 +6,9 @@ import com.reggie.common.R;
 import com.reggie.dto.DishDto;
 import com.reggie.entity.Category;
 import com.reggie.entity.Dish;
-import com.reggie.service.CategoryService;
 import com.reggie.service.DishService;
+import com.reggie.service.CategoryService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/dish")
 @Slf4j
+@Api(tags = "菜品管理接口")
 public class DishController {
     @Autowired
     private DishService dishService;

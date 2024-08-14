@@ -5,6 +5,7 @@ import com.reggie.common.BaseContext;
 import com.reggie.common.R;
 import com.reggie.entity.ShoppingCart;
 import com.reggie.service.ShoppingCartService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/shoppingCart")
+@Api(tags = "购物车管理接口")
 public class ShoppingCartController {
 
     @Autowired

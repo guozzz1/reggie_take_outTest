@@ -3,6 +3,7 @@ package com.reggie.controller;
 import com.reggie.common.R;
 import com.reggie.entity.Orders;
 import com.reggie.service.OrderService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/order")
+@Api(tags = "订单接口")
 public class OrderController {
 
     @Autowired
